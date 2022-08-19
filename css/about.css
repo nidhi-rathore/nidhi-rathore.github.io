@@ -1,0 +1,224 @@
+  /* .cards {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    text-align: center;
+    font-size: 0;
+    transform: translate(50%, 50%);
+  }
+  .card {
+    display: inline-block;
+    position: relative;
+    width: 16rem;
+    height: 18rem;
+    margin: 1rem;
+    font-size: 1.6rem;
+    color: #555E6B;
+    cursor: pointer;
+  }
+  .card__brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 16rem;
+    height: 13rem;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .card__logo {
+    display: inline-block;
+    left: 25%;
+    width: 40%;
+    margin: 12% 0 5%;
+  }
+  .card__status {
+    position: absolute;
+    right: 0;
+    bottom: 1.5rem;
+    left: 0;
+    z-index: 1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+  .card__status::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -0.1rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+    background: #11CFD9;
+    vertical-align: middle;
+  }
+  .card__content {
+    visibility: hidden;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    z-index: 2;
+    width: 140%;
+    padding: 13rem 2rem 2rem;
+    transform: translate(50%, 50%);
+  }
+  .card__background {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.2rem rgba(53, 65, 82, 0.1);
+    background: white;
+    transform: translate(50%, 50%);
+  }
+  .event {
+    position: relative;
+    padding-left: 20%;
+    padding-bottom: 1.5rem;
+  }
+  .event__group:last-child .event:last-child {
+    padding-bottom: 0;
+  }
+  .event__group:last-child .event:last-child::before {
+    display: none;
+  }
+  .event__group:first-child .event:first-child::after {
+    background: #11CFD9;
+  }
+  .event::before, .event::after {
+    content: '';
+    position: absolute;
+  }
+  .event::before {
+    top: 1.5rem;
+    left: 5%;
+    width: 1px;
+    height: 100%;
+    background: #ccc;
+  }
+  .event::after {
+    top: 1.5rem;
+    left: 5%;
+    width: 7px;
+    height: 7px;
+    margin: -3px 0 0 -3px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.3rem #FFFFFF;
+    background: #ccc;
+  }
+  .event__timeline {
+    padding: 2rem 0 1.5rem;
+  }
+  .event__group {
+    position: relative;
+    padding-left: 18%;
+  }
+  .event__group ol {
+    text-align: left;
+  }
+  .event__group-date {
+    position: absolute;
+    top: -0.4rem;
+    left: -2%;
+    width: 18%;
+    font-size: 2.4rem;
+    color: #354152;
+  }
+  .event__group-date span {
+    display: block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #555E6B;
+  }
+  .event__img {
+    display: block;
+    position: relative;
+    padding-top: 59.5%;
+    width: 80%;
+    margin-top: 0.8rem;
+  }
+  .event__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+  .event__time {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+   */
+
+
+   /* begin of pikachu section */
+
+.container--pika {
+  position: relative;
+  /* width: 1100px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-warp: warp; */
+  padding: 30px;
+}
+
+.container--pika .card--pika {
+  position: relative;
+  max-width: 1000px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.container--pika .card--pika:hover {
+  height: 320px;
+}
+
+.container--pika .card--pika .image--pika {
+  position: relative;
+  width: 200px;
+  height: 260px;
+  border-radius: 50%;
+  top: -40%;
+  left: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container--pika .card--pika .image--pika .img--pika {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.container--pika .card--pika .content--pika {
+  position: relative;
+  top: -140px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container--pika .card--pika:hover .content--pika {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+/* end of pikachu section */
