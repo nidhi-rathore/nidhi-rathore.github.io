@@ -193,7 +193,7 @@
   width: 200px;
   height: 260px;
   border-radius: 50%;
-  top: -40%;
+  top: -25%;
   left: 8px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -221,4 +221,30 @@
   opacity: 1;
   transition-delay: 0.2s;
 }
+
+
+/* about section */
+@media screen and (max-width: 992px) {
+  .container--pika .card--pika:hover {
+    height: 450px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 597px) {
+  .container--pika .card--pika:hover {
+    height: 600px;
+    padding-top: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container--pika .card--pika:hover {
+    height: 740px;
+  }
+}
 /* end of pikachu section */
+
+.img--pika{
+  border-radius: 20% !important;
+}
