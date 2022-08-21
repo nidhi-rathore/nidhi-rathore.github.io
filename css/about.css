@@ -240,7 +240,7 @@
 
 @media screen and (max-width: 500px) {
   .container--pika .card--pika:hover {
-    height: 740px;
+    height: 800px;
   }
 }
 /* end of pikachu section */
