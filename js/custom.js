@@ -38,7 +38,7 @@
 
 // timeline
 (function () {
-  const items = document.querySelectorAll(".timeline-section--experience li");
+  const items = document.querySelectorAll(".timeline-section--experience .li--experience");
 
   function isElementInViewport(el) {
     let rect = el.getBoundingClientRect();
