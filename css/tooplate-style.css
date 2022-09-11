@@ -1369,7 +1369,7 @@ ul {
   /* background: var(--clr-dark); */
   color: var(--clr-light);
   padding-top: 10%;
-  padding-bottom: 30%;
+  padding-bottom: 8%;
 }
 
 .img--responsibility{
@@ -1839,3 +1839,112 @@ display:none;
     margin-top: 56px;
   }
 }
+
+/* Achievement section begin */
+@import url("https://fonts.googleapis.com/css?family=Muli:400,700&display=swap");
+
+.achivement {
+  margin: 0;
+  height: calc(100vh - 8em);
+  font-family: "Muli", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.h1--achivement{
+  text-align: center;
+  margin: 1.5em;
+}
+
+.img--achivement {
+  width: 35%;
+  border-radius: 50%;
+}
+
+.container--achivement {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.items--achivement {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: carouselAnim 50s infinite alternate linear;
+}
+
+.entry--achivement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+  background: #fff;
+  margin: 1em;
+  padding: 0.5em;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .items--achivement {
+    animation: carouselAnim 35s infinite alternate linear;
+  }
+  
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (2 * 300px)));
+    }
+  }
+}
+
+.entry--achivement p {
+  text-align: center;
+  padding: 1em;
+}
+
+.name--achivement {
+  font-weight: bold;
+}
+
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (5 * 300px)));
+  }
+}
+
+.container--achivement .faders--achivement {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+
+.faders--achivement .right--achivement,
+.faders--achivement .left--achivement {
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 15%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+}
+
+.right--achivement {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+/* Achievement section end */
